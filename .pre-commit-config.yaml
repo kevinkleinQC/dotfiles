@@ -1,0 +1,25 @@
+- repo: https://github.com/Quantco/pre-commit-mirrors-black
+  rev: ''  # Use the sha / tag you want to point at
+  hooks:
+    - id: black-conda
+
+- repo: https://github.com/Quantco/pre-commit-mirrors-isort
+  rev: ''  # Use the sha / tag you want to point at
+  hooks:
+    - id: isort-conda
+
+- repo: https://github.com/Quantco/pre-commit-mirrors-flake8
+  rev: ''  # Use the sha / tag you want to point at
+  hooks:
+    - id: flake8-conda
+
+- repo: https://github.com/Quantco/pre-commit-mirrors-mypy
+  rev: ''  # Use the sha / tag you want to point at
+  hooks:
+    - id: mypy-conda
+
+- repo: https://github.com/pre-commit/mirrors-pylint
+  rev: ''  # Use the sha / tag you want to point at
+  hooks:
+    - id: pylint
+      args: ["--disable=C0330, C0114, C0115, C0116, C0411, R0801, R0913, R0903"]
